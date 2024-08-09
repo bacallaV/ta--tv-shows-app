@@ -1,1 +1,8 @@
-<p>create-tv-show works!</p>
+<main>
+  <h1 class="page-title">Create Tv Show</h1>
+
+  <app-tv-show-form
+    (onSubmitData)="saveTvShow($event)"
+    [diableButton]="isLoading"
+  ></app-tv-show-form>
+</main>

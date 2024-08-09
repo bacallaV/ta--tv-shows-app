@@ -5,20 +5,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateTvShowComponent } from './pages/create-tv-show/create-tv-show.component';
-import { EditTvShowComponent } from './pages/edit-tv-show/edit-tv-show.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { TvShowDetailsComponent } from './pages/tv-show-details/tv-show-details.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TvShowFormComponent } from './components/tv-show-form/tv-show-form.component';
 import { TvShowInfoComponent } from './components/tv-show-info/tv-show-info.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateTvShowComponent,
-    EditTvShowComponent,
     NotFoundComponent,
-    TvShowDetailsComponent,
     HomeComponent,
     TvShowFormComponent,
     TvShowInfoComponent
@@ -27,6 +24,7 @@ import { TvShowInfoComponent } from './components/tv-show-info/tv-show-info.comp
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

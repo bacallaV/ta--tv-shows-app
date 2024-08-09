@@ -3,10 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {
   CreateTvShowComponent,
-  EditTvShowComponent,
   HomeComponent,
   NotFoundComponent,
-  TvShowDetailsComponent
 } from '@pages/index';
 
 const routes: Routes = [
@@ -16,16 +14,8 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'details/:id',
-    component: TvShowDetailsComponent,
-  },
-  {
     path: 'create',
     component: CreateTvShowComponent,
-  },
-  {
-    path: 'edit/:id',
-    component: EditTvShowComponent,
   },
   {
     path: '**',

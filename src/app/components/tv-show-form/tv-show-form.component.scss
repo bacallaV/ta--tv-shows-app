@@ -1,0 +1,29 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 4px;
+
+  input[type=checkbox] {
+    width: min-content;
+  }
+
+  input.invalid {
+    border-color: red;
+    outline: 1px solid red;
+
+    ~label {
+      color: red;
+    }
+  }
+
+  small {
+    color: red;
+  }
+}

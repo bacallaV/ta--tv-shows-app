@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { TvShow } from '@models/tv-show.model';
 
 import { TvShowsService } from '@services/tv-shows.service';
@@ -14,6 +16,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private readonly tvShowsService: TvShowsService,
+    private readonly router: Router,
   ) {
     this.isLoading = true;
     this.tvShows = [];
@@ -58,5 +61,9 @@ export class HomeComponent implements OnInit {
         console.error(err);
       }
     });
+  }
+
+  public navigateToCreate(): void {
+    this.router.navigateByUrl('/create');
   }
 }
