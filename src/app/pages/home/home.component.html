@@ -1,1 +1,17 @@
-<p>home works!</p>
+<h1 class="page-title">Tv Shows</h1>
+
+<ng-container *ngIf="isLoading; else dataContainer">
+  <p class="loading">Loading...</p>
+</ng-container>
+
+<ng-template #dataContainer>
+  <div class="tvs-container">
+    <ng-container *ngFor="let tvs of tvShows">
+      <app-tv-show-info
+        [tvShow]="tvs"
+        (onStarClicked)="toggleFavorite($event)"
+        (onTrashClicked)="deleteTvShow($event)"
+      ></app-tv-show-info>
+    </ng-container>
+  </div>
+</ng-template>

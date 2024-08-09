@@ -1,0 +1,21 @@
+<ng-container *ngIf="!!tvShow">
+  <article class="tvs-card">
+    <p class="tvs-card-name">{{tvShow.name}}</p>
+
+    <div class="tvs-card-actions">
+      <button
+        type="button"
+        class="tvs-card-star"
+        (click)="toggleFavorite()"
+      >
+        {{tvShow.favorite ? '★' : '☆'}}
+      </button>
+
+      <button
+        type="button"
+        class="tvs-card-remove"
+        (click)="delete()"
+      >🗑️</button>
+    </div>
+  </article>
+</ng-container>

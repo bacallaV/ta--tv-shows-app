@@ -10,6 +10,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { TvShowDetailsComponent } from './pages/tv-show-details/tv-show-details.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TvShowFormComponent } from './components/tv-show-form/tv-show-form.component';
+import { TvShowInfoComponent } from './components/tv-show-info/tv-show-info.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TvShowFormComponent } from './components/tv-show-form/tv-show-form.comp
     NotFoundComponent,
     TvShowDetailsComponent,
     HomeComponent,
-    TvShowFormComponent
+    TvShowFormComponent,
+    TvShowInfoComponent
   ],
   imports: [
     BrowserModule,

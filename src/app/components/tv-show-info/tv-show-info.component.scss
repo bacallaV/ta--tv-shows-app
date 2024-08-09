@@ -1,0 +1,25 @@
+.tvs-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  min-width: 248px;
+}
+
+.tvs-card-name {
+  max-width: 124px;
+}
+
+.tvs-card-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  width: fit-content;
+}
+
+.tvs-card-star {
+  text-align: end;
+}
